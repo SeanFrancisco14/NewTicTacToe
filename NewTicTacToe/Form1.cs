@@ -15,6 +15,16 @@ namespace NewCalculator
         String[] gameBoard = new string[9];
         int current_Turn = 0;
 
+        public TicTacToe()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public String returnSymbol(int turn)
         {
             if (turn % 2 == 0)
@@ -194,11 +204,6 @@ namespace NewCalculator
             current_Turn = 0;
         }
 
-        public TicTacToe()
-        {
-            InitializeComponent();
-        }
-
         private void btn1_Click(object sender, EventArgs e)
         {
             current_Turn++;
@@ -292,11 +297,6 @@ namespace NewCalculator
         private void btn_Restart_Click(object sender, EventArgs e)
         {
             reset();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
